@@ -1,0 +1,1277 @@
+a,
+p {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+nav {
+  z-index: 2;
+  position: fixed;
+  background-color: #a73121;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: rgb(224, 15, 15);
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+nav ul li a:hover {
+  color: #faf16d;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+.fa-solid {
+  margin-right: 3px;
+}
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+.image_logo {
+  position: absolute;
+  width: 25%;
+  top: -35%;
+}
+.container_2 {
+  background-color: #aa2e2e;
+  width: 40%;
+  min-width: 420px;
+  padding: 35px 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  border-radius: 10px;
+  box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+.stixia {
+  font-weight: 600;
+  font-size: 20px;
+}
+.stixia_tilefono,
+.stixia_email,
+.stixia_odos {
+  font-size: 20px;
+}
+.stixia_epikinonias_kartela h3 {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+span {
+  font-size: 20px;
+  color: #ffff00;
+}
+.container {
+  background-color: #aa2e2e;
+  width: 40%;
+  min-width: 420px;
+  padding: 35px 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  border-radius: 10px;
+  box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  margin: 2% auto;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+}
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  position: relative;
+  margin: 30px auto 0px auto;
+}
+.row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px 30px;
+  margin-bottom: 20px;
+}
+.container label {
+  background-color: #ff1e00;
+  border-radius: 20px;
+  padding: 4px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+textarea,
+input {
+  width: 100%;
+  font-weight: 400;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.2px solid black;
+  margin-top: 5px;
+}
+textarea {
+  resize: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #ff1e00;
+}
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  padding: 20px 30px;
+  background-color: #ff1e00;
+  color: black;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 13px;
+  color: #ffffff;
+}
+.bg_epikinonia {
+  position: relative;
+  margin-top: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+@media (min-width: 299px) and (max-width: 575px) {
+  nav {
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 40vh;
+    background-color: #a73121;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-solid {
+    font-size: 13px;
+    margin-right: 3px;
+  }
+  .fa-solid.fa-bars::before {
+    font-size: 19px;
+    color: #ffffff;
+  }
+  .fa-solid.fa-address-book::before,
+  .fa-solid.fa-phone,
+  .fa-solid.fa-envelope {
+    font-size: 0px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 255px;
+    left: -1%;
+    top: 10%;
+  }
+  label.checkbtn {
+    margin-right: 18px;
+  }
+  .container_2 {
+    top: 110%;
+    left: -100%;
+  }
+  .stixia_odos,
+  .stixia_tilefono,
+  .stixia_email {
+    font-size: 0px;
+  }
+  .xroma_email {
+    font-size: 0px;
+  }
+  .container {
+    margin-top: 10%;
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 150px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  h1 {
+    font-size: 0px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 2% auto;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0px auto;
+  }
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .column {
+    width: 45%;
+  }
+  .container label {
+    background-color: #ff1e00;
+    border-radius: 10px;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+  }
+  textarea,
+  input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1.2px solid black;
+    margin-top: 10px;
+  }
+  textarea {
+    resize: none;
+  }
+  textarea:focus,
+  input:focus {
+    outline: none;
+    border-color: #ff1e00;
+  }
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 20px 30px;
+    background-color: #ff1e00;
+    color: black;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 13px;
+  }
+  .bg_epikinonia {
+    position: relative;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 135vh;
+    object-fit: cover;
+  }
+  span {
+    font-size: 0px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  nav {
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    background-color: #a73121;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-solid {
+    font-size: 17px;
+    margin-right: 3px;
+  }
+  .fa-solid.fa-bars::before {
+    font-size: 28px;
+    color: #ffffff;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 350px;
+    left: -1%;
+    top: -12%;
+  }
+  label.checkbtn {
+    margin-right: 40px;
+  }
+  .container_2 {
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 200px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 118%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  .stixia_odos,
+  .stixia_tilefono {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 20%;
+  }
+  .stixia_email {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 20%;
+  }
+  .xroma_email {
+    margin-left: 5%;
+    color: #ffff00;
+  }
+  .container {
+    margin-top: 10%;
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 150px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 2% auto;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0px auto;
+  }
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .column {
+    width: 75%;
+  }
+  .container label {
+    background-color: #ff1e00;
+    border-radius: 10px;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+  }
+  textarea,
+  input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1.2px solid black;
+    margin-top: 10px;
+  }
+  textarea {
+    resize: none;
+  }
+  textarea:focus,
+  input:focus {
+    outline: none;
+    border-color: #ff1e00;
+  }
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 20px 30px;
+    background-color: #ff1e00;
+    color: black;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 13px;
+  }
+  .bg_epikinonia {
+    position: relative;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 135vh;
+    object-fit: cover;
+  }
+}
+@media (min-width: 768px) and (max-width: 877px) {
+  nav {
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    background-color: #a73121;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-solid {
+    font-size: 17px;
+    margin-right: 3px;
+  }
+  .fa-solid.fa-bars::before {
+    font-size: 28px;
+    color: #ffffff;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 350px;
+    left: -1%;
+    top: -12%;
+  }
+  label.checkbtn {
+    margin-right: 40px;
+  }
+  .container_2 {
+    margin-top: -10%;
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 200px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 118%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  .stixia_odos,
+  .stixia_tilefono {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 1%;
+  }
+  .stixia_email {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 1%;
+  }
+  .xroma_email {
+    margin-left: 1%;
+    color: #ffff00;
+  }
+  .container {
+    margin-top: 5%;
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 150px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 2% auto;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0px auto;
+  }
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .column {
+    width: 85%;
+  }
+  .container label {
+    background-color: #ff1e00;
+    border-radius: 10px;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+  textarea,
+  input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1.2px solid black;
+    margin-top: 10px;
+  }
+  textarea {
+    resize: none;
+  }
+  textarea:focus,
+  input:focus {
+    outline: none;
+    border-color: #ff1e00;
+  }
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 20px 30px;
+    background-color: #ff1e00;
+    color: black;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 13px;
+  }
+  .bg_epikinonia {
+    position: relative;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 135vh;
+    object-fit: cover;
+  }
+}
+@media (min-width: 878px) and (max-width: 992px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a,
+  p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    z-index: 2;
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 60px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 13px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .fa-solid {
+    margin-right: -3px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: -1%;
+  }
+  label.checkbtn {
+    margin-right: 40px;
+  }
+  .container_2 {
+    margin-top: -5%;
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 200px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 118%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  .stixia_odos,
+  .stixia_tilefono {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1%;
+  }
+  .stixia_email {
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1%;
+  }
+  .xroma_email {
+    margin-left: 1%;
+    color: #ffff00;
+  }
+  .container {
+    margin-top: 5%;
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 150px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 2% auto;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0px auto;
+  }
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .column {
+    width: 90%;
+  }
+  .container label {
+    background-color: #ff1e00;
+    border-radius: 10px;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+  textarea,
+  input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1.2px solid black;
+    margin-top: 10px;
+  }
+  textarea {
+    resize: none;
+  }
+  textarea:focus,
+  input:focus {
+    outline: none;
+    border-color: #ff1e00;
+  }
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 20px 30px;
+    background-color: #ff1e00;
+    color: black;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 13px;
+  }
+  .bg_epikinonia {
+    position: relative;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 135vh;
+    object-fit: cover;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a,
+  p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    z-index: 2;
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 60px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 13px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .fa-solid {
+    margin-right: -3px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: -1%;
+  }
+  label.checkbtn {
+    margin-right: 40px;
+  }
+  .container_2 {
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  .stixia_odos,
+  .stixia_tilefono,
+  .stixia_email {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .stixia_epikinonias_kartela h3 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  span {
+    color: #ffff00;
+  }
+  .container {
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 73%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 2% auto;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0px auto;
+  }
+  .column {
+    margin-top: 2%;
+  }
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .container label {
+    background-color: #ff1e00;
+    border-radius: 20px;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+  textarea,
+  input {
+    width: 100%;
+    height: 25px;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid black;
+    margin-top: 5px;
+  }
+  textarea {
+    resize: none;
+  }
+  textarea:focus,
+  input:focus {
+    outline: none;
+    border-color: #ff1e00;
+  }
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 20px 30px;
+    background-color: #ff1e00;
+    color: black;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .bg_epikinonia {
+    position: relative;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a,
+  p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    z-index: 2;
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 7px 13px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .fa-solid {
+    margin-right: -3px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 30%;
+    top: -10%;
+    left: -1%;
+  }
+  label.checkbtn {
+    margin-right: 40px;
+  }
+  .container_2 {
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  .stixia_odos,
+  .stixia_tilefono,
+  .stixia_email {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .stixia_epikinonias_kartela h3 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  span {
+    color: #ffff00;
+  }
+  .container {
+    background-color: #aa2e2e;
+    width: 40%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 2% auto;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0px auto;
+  }
+  .column {
+    margin-top: 5%;
+  }
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .container label {
+    background-color: #ff1e00;
+    border-radius: 20px;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+  textarea,
+  input {
+    width: 100%;
+    height: 25px;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid black;
+    margin-top: 5px;
+  }
+  textarea {
+    resize: none;
+  }
+  textarea:focus,
+  input:focus {
+    outline: none;
+    border-color: #ff1e00;
+  }
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 20px 30px;
+    background-color: #ff1e00;
+    color: black;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .bg_epikinonia {
+    position: relative;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+}

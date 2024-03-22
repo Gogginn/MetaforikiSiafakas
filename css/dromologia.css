@@ -1,0 +1,888 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+a,
+p {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  background-color: #a73121;
+  z-index: 12;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: black;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+nav ul li a:hover {
+  color: #ffee00;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.fa-solid {
+  margin-right: 3px;
+}
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+.image_logo {
+  position: absolute;
+  width: 25%;
+  top: -35%;
+}
+.ikona_dromologia {
+  z-index: 1;
+  margin-top: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.box {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  margin-top: -875px;
+}
+h1 {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+p {
+  width: 1000px;
+  color: #252525;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 10px auto auto auto;
+  padding: 10px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.sabato,
+.kiriaki {
+  background-color: #ffffff;
+  color: #000000;
+}
+.course-col {
+  position: relative;
+  z-index: 10;
+  background-color: #df2f2f;
+  flex-basis: 10%;
+  margin-bottom: 5%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+h3 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+p:hover {
+  transform: scale(1.09);
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 299px) and (max-width: 575px) {
+  nav {
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 40vh;
+    background-color: #a73121;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-solid {
+    font-size: 13px;
+    margin-right: 3px;
+  }
+  .fa-solid.fa-bars::before {
+    font-size: 19px;
+    color: #ffffff;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 255px;
+    left: -1%;
+    top: 10%;
+  }
+  label.checkbtn {
+    margin-right: 18px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 250px;
+    top: 14%;
+    left: -2%;
+  }
+  .ikona_dromologia {
+    object-fit: cover;
+    z-index: 1;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  .box {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    margin-top: -750px;
+  }
+  h1 {
+    margin-top: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3%;
+  }
+  p {
+    width: 100px;
+    color: #252525;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 10px auto auto auto;
+    padding: 10px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .sabato,
+  .kiriaki {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .course-col {
+    position: relative;
+    z-index: 10;
+    flex-basis: 10%;
+    background: #df2f2f;
+    margin-bottom: 5%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  p:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  nav {
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    background-color: #a73121;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-solid {
+    font-size: 13px;
+    margin-right: 3px;
+  }
+  .fa-solid.fa-bars::before {
+    font-size: 19px;
+    color: #ffffff;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 255px;
+    left: -1%;
+    top: 10%;
+  }
+  label.checkbtn {
+    margin-right: 18px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 340px;
+    top: 0%;
+    left: -2%;
+  }
+  .ikona_dromologia {
+    object-fit: cover;
+    z-index: 1;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  .box {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    margin-top: -775px;
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 3%;
+  }
+  p {
+    width: 320px;
+    color: #252525;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 10px auto auto auto;
+    padding: 10px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .sabato,
+  .kiriaki {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .course-col {
+    position: relative;
+    z-index: 10;
+    flex-basis: 10%;
+    background: #df2f2f;
+    margin-bottom: 5%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  h3 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  p:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+@media (min-width: 768px) and (max-width: 877px) {
+  nav {
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    background-color: #a73121;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-solid {
+    font-size: 13px;
+    margin-right: 3px;
+  }
+  .fa-solid.fa-bars::before {
+    font-size: 19px;
+    color: #ffffff;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 255px;
+    left: -1%;
+    top: 10%;
+  }
+  label.checkbtn {
+    margin-right: 18px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 340px;
+    top: 0%;
+    left: -2%;
+  }
+  .ikona_dromologia {
+    object-fit: cover;
+    z-index: 1;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  .box {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    margin-top: -775px;
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  p {
+    width: 450px;
+    color: #252525;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 10px auto auto auto;
+    padding: 10px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .sabato,
+  .kiriaki {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .course-col {
+    position: relative;
+    z-index: 10;
+    flex-basis: 10%;
+    background: #df2f2f;
+    margin-bottom: 5%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  h3 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  p:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+@media (min-width: 878px) and (max-width: 992px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a,
+  p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    z-index: 2;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 80px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 13px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .fa-solid {
+    margin-right: -3px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: -1%;
+  }
+  .ikona_dromologia {
+    object-fit: cover;
+    z-index: 1;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  .box {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    margin-top: -750px;
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 3%;
+  }
+  p {
+    width: 400px;
+    color: #252525;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 10px auto auto auto;
+    padding: 10px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .sabato,
+  .kiriaki {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .course-col {
+    position: relative;
+    z-index: 10;
+    flex-basis: 10%;
+    background: #df2f2f;
+    margin-bottom: 5%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  p:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a,
+  p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    z-index: 2;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 80px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 13px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .fa-solid {
+    margin-right: -3px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: -1%;
+  }
+  .ikona_dromologia {
+    z-index: 1;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  .box {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    margin-top: -800px;
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 3%;
+  }
+  p {
+    height: 20px;
+    width: 500px;
+    color: #252525;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 10px auto auto auto;
+    padding: 10px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .sabato,
+  .kiriaki {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .course-col {
+    position: relative;
+    z-index: 10;
+    flex-basis: 10%;
+    background: #df2f2f;
+    margin-bottom: 5%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  p:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a,
+  p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    z-index: 2;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 80px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 13px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .fa-solid {
+    margin-right: -3px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: -1%;
+  }
+  .ikona_dromologia {
+    z-index: 1;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  .box {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    margin-top: -950px;
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 3%;
+  }
+  p {
+    height: 20px;
+    width: 500px;
+    color: #252525;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 10px auto auto auto;
+    padding: 10px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .sabato,
+  .kiriaki {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .course-col {
+    position: relative;
+    z-index: 10;
+    flex-basis: 10%;
+    background: #df2f2f;
+    margin-bottom: 5%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  p:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.4);
+  }
+}

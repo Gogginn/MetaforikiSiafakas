@@ -1,0 +1,885 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a,
+p {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+a,
+p {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  z-index: 2;
+  position: fixed;
+  background-color: #a73121;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: black;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+nav ul li a:hover {
+  color: #faf16d;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+.fa-solid {
+  margin-right: 3px;
+}
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+.image_logo {
+  position: absolute;
+  width: 25%;
+  top: -35%;
+}
+.bg_ipiresies {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.box {
+  position: sticky;
+  width: 90%;
+  padding-top: 8%;
+  margin: -50% auto;
+  text-align: center;
+}
+h1 {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+p {
+  color: #777;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  flex-basis: 31%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  transition: 0.9s;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.course-col:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+.ikona_metafora,
+.ikona_dianomi,
+.ikona_apothikeusi {
+  border-radius: 15px;
+  width: 100%;
+}
+@media (min-width: 299px) and (max-width: 575px) {
+  nav {
+    margin-top: -25%;
+    z-index: 2;
+    position: fixed;
+    background-color: #a73121;
+    height: 70px;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 40vh;
+    background-color: #a73121;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-solid {
+    font-size: 13px;
+    margin-right: 3px;
+  }
+  .fa-bars {
+    font-size: 20px;
+  }
+  .fa-bars::before {
+    color: #ffffff;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 250px;
+    left: 0%;
+    top: 5%;
+  }
+  label.checkbtn {
+    margin-right: 18px;
+  }
+  .bg_ipiresies {
+    z-index: -1;
+    margin-top: -75px;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
+  .box {
+    position: sticky;
+    width: 90%;
+    margin: 25% auto;
+    text-align: center;
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  p {
+    color: #777;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-col {
+    flex-basis: 31%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    transition: 0.9s;
+  }
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .course-col:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  }
+  .ikona_metafora,
+  .ikona_dianomi,
+  .ikona_apothikeusi {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  nav {
+    margin-top: -25%;
+    z-index: 2;
+    position: fixed;
+    background-color: #a73121;
+    height: 70px;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    background-color: #a73121;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-solid {
+    font-size: 17px;
+    margin-right: 3px;
+  }
+  .fa-bars::before {
+    font-size: 28px;
+    color: #ffffff;
+  }
+  label.checkbtn {
+    margin-right: 40px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 350px;
+    left: 0%;
+    top: -15%;
+  }
+  .bg_ipiresies {
+    z-index: -1;
+    margin-top: -145px;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
+  .box {
+    position: sticky;
+    width: 90%;
+    padding-top: 8%;
+    margin: 25% auto;
+    text-align: center;
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  p {
+    color: #777;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-col {
+    flex-basis: 31%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    transition: 0.9s;
+  }
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .course-col:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  }
+  .ikona_metafora,
+  .ikona_dianomi,
+  .ikona_apothikeusi {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 877px) {
+  nav {
+    margin-top: -25%;
+    z-index: 2;
+    position: fixed;
+    background-color: #a73121;
+    height: 70px;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    background-color: #a73121;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-solid {
+    font-size: 17px;
+    margin-right: 3px;
+  }
+  .fa-bars::before {
+    font-size: 28px;
+    color: #ffffff;
+  }
+  label.checkbtn {
+    margin-right: 40px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 350px;
+    left: 0%;
+    top: -15%;
+  }
+  .bg_ipiresies {
+    z-index: -1;
+    margin-top: -175px;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
+  .box {
+    position: sticky;
+    width: 90%;
+    padding-top: 8%;
+    margin: 25% auto;
+    text-align: center;
+  }
+  h1 {
+    margin-top: -15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-col {
+    flex-basis: 28%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    transition: 0.9s;
+  }
+  h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .course-col:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  }
+  .ikona_metafora,
+  .ikona_dianomi,
+  .ikona_apothikeusi {
+    width: 100%;
+  }
+}
+@media (min-width: 878px) and (max-width: 992px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a,
+  p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    margin-top: -25%;
+    z-index: 2;
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 13px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .fa-solid {
+    margin-right: -3px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: -1%;
+  }
+  .bg_ipiresies {
+    z-index: -1;
+    margin-top: -175px;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
+  .box {
+    position: sticky;
+    width: 90%;
+    padding-top: 8%;
+    margin: 25% auto;
+    text-align: center;
+  }
+  h1 {
+    margin-top: -15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-col {
+    flex-basis: 31%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 45px 30px;
+    box-sizing: border-box;
+    transition: 0.9s;
+  }
+  h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .course-col:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  }
+  .ikona_metafora,
+  .ikona_dianomi,
+  .ikona_apothikeusi {
+    width: 100%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a,
+  p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    margin-top: -25%;
+    z-index: 2;
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 13px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .fa-solid {
+    margin-right: -3px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: -1%;
+  }
+  .bg_ipiresies {
+    z-index: -1;
+    position: fixed;
+    margin-top: -240px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .box {
+    position: sticky;
+    width: 90%;
+    padding-top: 8%;
+    margin: 25% auto;
+    text-align: center;
+  }
+  h1 {
+    margin-top: -15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-col {
+    flex-basis: 45%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 45px 30px;
+    box-sizing: border-box;
+    transition: 0.9s;
+  }
+  h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .course-col:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  }
+  .ikona_metafora,
+  .ikona_dianomi,
+  .ikona_apothikeusi {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  a,
+  p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav {
+    margin-top: -25%;
+    z-index: 2;
+    position: fixed;
+    background-color: #a73121;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 7px 13px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  .fa-solid {
+    margin-right: -3px;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .image_logo {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: -1%;
+  }
+  .bg_ipiresies {
+    z-index: -1;
+    position: fixed;
+    margin-top: -300px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .box {
+    position: sticky;
+    width: 90%;
+    padding-top: 8%;
+    margin: 25% auto;
+    text-align: center;
+  }
+  h1 {
+    margin-top: -15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 10px;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-col {
+    flex-basis: 45%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 45px 30px;
+    box-sizing: border-box;
+    transition: 0.9s;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .course-col:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  }
+  .ikona_metafora,
+  .ikona_dianomi,
+  .ikona_apothikeusi {
+    width: 100%;
+  }
+}

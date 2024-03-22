@@ -1,0 +1,15 @@
+nav bar:#a73121;
+koubia:#c23c2b;
+karteles:#952323;
+perioxes:#952323;
+footer:#a73121;
+koubi:#952323;
+hover:#aa2d2d;
+
+week:#df2f2f;
+sk:#ffffff;
+
+form:#aa2e2e;
+koubia:#ff1e00; focus:#ff1e00;
+ipoboli:#ff1e00;
+course:#df2f2f;

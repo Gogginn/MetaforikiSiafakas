@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/epikinonia.css" />
+    <link rel="icon" href="title_icon/title_icon_update2.png" type="image/x-icon" />
+    <title>ΕΠΙΚΟΙΝΩΝΙΑ</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars" style="color: #000000"></i>
+        </label>
+        <label class="logo">
+          <a href="index.html"
+            ><img class="image_logo" src="logo/official_log.png" alt=""
+          /></a>
+        </label>
+        <ul>
+          <li>
+            <i class="fa-solid fa-house" style="color: #ffffff"> </i>
+            <a href="index.html">ΑΡΧΙΚΗ</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-truck-fast" style="color: #ffffff"> </i
+            ><a href="ipiresies.html">ΥΠΗΡΕΣΙΕΣ</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user" style="color: #ffffff"> </i
+            ><a href="sxetika_me_emas.html">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-tty" style="color: #ffffff"> </i
+            ><a href="epikinonia.html">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="box">
+      <img class="bg_epikinonia" src="ikones/ipiresies_bg.jpg" alt="">
+    </div>
+    <div class="container">
+      <h1>ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ</h1>
+      <p>ΣΥΜΠΛΗΡΩΣΤΕ ΤΗΝ ΠΑΡΑΚΑΤΩ ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ</p>
+      <form action="https://formspree.io/f/xjvqazwe" method="POST">
+        <div class="row">
+          <div class="column">
+            <label for="name">* ΟΝΟΜΑ:</label>
+            <input type="text" name="name" placeholder="Ονομα..." / required>
+          </div>
+          <div class="column">
+            <label for="email_id">* Email:</label>
+            <input type="email" name="emailaddress" placeholder="Email..." / required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="subject">ΘΕΜΑ:</label>
+            <input type="text" name="theme" placeholder="Θέμα..." />
+          </div>
+          <div class="column">
+            <label for="phone">ΤΗΛΕΦΩΝΟ:</label>
+            <input type="text" name="phone" placeholder="Αριθμός τηλεφώνου..." />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="message">* ΠΕΡΙΓΡΑΨΤΕ:</label required>
+            <textarea name="message" rows="3" placeholder="Πείτε μας..."></textarea>
+          </div>
+        </div>
+        <button>ΥΠΟΒΟΛΗ</button>
+      </form>
+    </div>
+    <div class="container_2">
+      <h1>ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ</h1>
+      <div class="column">
+        <div class="stixia_epikinonias_kartela">
+          <p class="stixia_odos">
+            <i class="fa-solid fa-address-book" style="color: #ffffff"></i
+            > <span>ΔΙΕΥΘΥΝΣΗ:</span> ΚΗΦΙΣΟΥ 91 Α1 ΑΙΓΑΛΕΩ
+          </p>
+          <p class="stixia_tilefono">
+            <i class="fa-solid fa-phone" style="color: #ffffff"></i
+            > <span>ΤΗΛΕΦΩΝΟ:</span> 210 34 52 964
+          </p>
+          <p class="stixia_email">
+            <i class="fa-solid fa-envelope" style="color: #ffffff"></i
+            > <span class="xroma_email">EMAIL:</span> absiafakas@hotmail.com
+          </p>
+        </div>
+    </div>
+  </body>
+</html>
